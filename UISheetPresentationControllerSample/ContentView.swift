@@ -8,9 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isShowLarge: Bool = false
+    
+    @State var isShowMedium: Bool = false
+    
+    @State var isShowLargeAndMedium: Bool = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(spacing: 20) {
+            Button {
+                isShowLarge = true
+            } label: {
+                Text("Large Only")
+            }
+            .halfModal(isShow: $isShowLarge, detents: [.large()]) {
+                Text("Large")
+            } onDismiss: {
+    
+            }
+            
+            Button {
+                isShowMedium = true
+            } label: {
+                Text("Medium Only")
+            }
+            .halfModal(isShow: $isShowMedium, detents: [.medium()]) {
+                Text("Medium")
+            } onDismiss: {
+                
+            }
+            
+            Button {
+                isShowLargeAndMedium = true
+            } label: {
+                Text("Large and Medium")
+            }
+            .halfModal(isShow: $isShowLargeAndMedium, detents: [.large(), .medium()]) {
+                Text("Large and Medium")
+            } onDismiss: {
+                
+            }
+        }
     }
 }
 

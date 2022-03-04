@@ -14,6 +14,8 @@
 		037DBBEB27D256A600882D8F /* UISheetPresentationControllerSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DBBEA27D256A600882D8F /* UISheetPresentationControllerSampleTests.swift */; };
 		037DBBF527D256A600882D8F /* UISheetPresentationControllerSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DBBF427D256A600882D8F /* UISheetPresentationControllerSampleUITests.swift */; };
 		037DBBF727D256A600882D8F /* UISheetPresentationControllerSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DBBF627D256A600882D8F /* UISheetPresentationControllerSampleUITestsLaunchTests.swift */; };
+		037DBC0727D256E800882D8F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DBC0627D256E800882D8F /* View+Extension.swift */; };
+		037DBC0927D256FD00882D8F /* HalfModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DBC0827D256FD00882D8F /* HalfModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		037DBBF027D256A600882D8F /* UISheetPresentationControllerSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UISheetPresentationControllerSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		037DBBF427D256A600882D8F /* UISheetPresentationControllerSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISheetPresentationControllerSampleUITests.swift; sourceTree = "<group>"; };
 		037DBBF627D256A600882D8F /* UISheetPresentationControllerSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISheetPresentationControllerSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		037DBC0627D256E800882D8F /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		037DBC0827D256FD00882D8F /* HalfModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,12 @@
 		037DBBD827D256A500882D8F /* UISheetPresentationControllerSample */ = {
 			isa = PBXGroup;
 			children = (
+				037DBC0327D256AF00882D8F /* Extensions */,
 				037DBBD927D256A500882D8F /* UISheetPresentationControllerSampleApp.swift */,
 				037DBBDB27D256A500882D8F /* ContentView.swift */,
 				037DBBDD27D256A600882D8F /* Assets.xcassets */,
 				037DBBDF27D256A600882D8F /* Preview Content */,
+				037DBC0827D256FD00882D8F /* HalfModalViewController.swift */,
 			);
 			path = UISheetPresentationControllerSample;
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				037DBBF627D256A600882D8F /* UISheetPresentationControllerSampleUITestsLaunchTests.swift */,
 			);
 			path = UISheetPresentationControllerSampleUITests;
+			sourceTree = "<group>";
+		};
+		037DBC0327D256AF00882D8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				037DBC0627D256E800882D8F /* View+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				037DBBDC27D256A500882D8F /* ContentView.swift in Sources */,
+				037DBC0727D256E800882D8F /* View+Extension.swift in Sources */,
 				037DBBDA27D256A500882D8F /* UISheetPresentationControllerSampleApp.swift in Sources */,
+				037DBC0927D256FD00882D8F /* HalfModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
